@@ -14,8 +14,8 @@ entity Address:cuid{
 }
 
 entity Contacts:cuid{
-    Telephone:Integer;
-    Mobile_Phone:Integer;
+    Telephone:String;
+    Mobile_Phone:String;
     Fax:String;
     Email:String(100);
     Language:String;

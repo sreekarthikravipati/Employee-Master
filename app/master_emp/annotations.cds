@@ -195,3 +195,51 @@ annotate service.Employees with {
         Common.FieldControl : #Mandatory,
 )};
 
+annotate service.Employees with {
+    Status @Common.FieldControl : #Mandatory
+};
+
+annotate service.Employees with {
+    FirstNAme @Common.FieldControl : #Mandatory
+};
+
+annotate service.Address with {
+    City @(
+        Common.FieldControl : #Mandatory,
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Address',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : City,
+                    ValueListProperty : 'City',
+                },
+            ],
+        },
+        Common.ValueListWithFixedValues : true,
+    )
+};
+
+annotate service.Address with {
+    Region @(
+        Common.FieldControl : #Mandatory,
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Address',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : Region,
+                    ValueListProperty : 'Region',
+                },
+            ],
+        },
+        Common.ValueListWithFixedValues : true,
+    )
+};
+
+annotate service.Address with {
+    PostalCode @Common.FieldControl : #Mandatory
+};
+

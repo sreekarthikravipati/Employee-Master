@@ -1,4 +1,5 @@
 # CAP Master
+.vscode
 _out
 *.db
 *.sqlite
