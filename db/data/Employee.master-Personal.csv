@@ -1,0 +1,6 @@
+ID,User_ID,Status,User_type,Salutation,FirstNAme,LastName,LoginName,DisplayName
+57beb8f4-bfe1-45df-af8c-e13f9dfb20ab,P1000,Inactive,Employee,Mr.,Sree,Karthik,ZRSVERA,Sree Karthik (ZRSVERA)
+0554a8f4-9924-423a-9ddd-8d3a4cbd126b,P1001,Active,Employee,Mr.,Sharmaa,Karthik,ZPRTVAX,Sharma Karthik (ZPRTVAX)
+45493d86-36d7-4ecc-b03e-dab65bcbf69b,P1002,Inactive,Employee,Mr.,Shravan,Godasi,ZGHRTI,Shravan Godasi (ZGHRTI)
+6d24bf10-af80-4302-b13c-25992968f262,P1003,Inactive,Employee,Dr.,Venkat,R,ZPRDRA,Venkat R (ZPRDRA)
+b86171db-41bc-45cb-a90d-d67a670cb743,P1004,Active,Employee,Ms.",Amarnath,D,ZPRTVAX,Amarnath D (ZPRTVAX)
