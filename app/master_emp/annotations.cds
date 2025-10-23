@@ -174,3 +174,24 @@ annotate service.Employees with @(
     },
 );
 
+annotate service.Employees with {
+    User_ID @Common.FieldControl : #Mandatory
+};
+
+annotate service.Employees with {
+    Salutation @(
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Employees',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : Salutation,
+                    ValueListProperty : 'Salutation',
+                },
+            ],
+        },
+        Common.ValueListWithFixedValues : true,
+        Common.FieldControl : #Mandatory,
+)};
+
